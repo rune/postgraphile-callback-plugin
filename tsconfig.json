@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "allowJs": false,
+    "rootDir": "src",
+    "outDir": "lib",
+    "target": "ESNext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "inlineSourceMap": false,
+    "pretty": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/__tests__/*"]
+}
