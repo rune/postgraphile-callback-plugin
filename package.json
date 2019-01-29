@@ -6,6 +6,16 @@
   "scripts": {
     "build": "rm -vrf lib && tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuneAI/postgraphile-callback-plugin.git"
+  },
+  "author": "Rune AI Inc.",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/RuneAI/postgraphile-callback-plugin/issues"
+  },
+  "homepage": "https://github.com/RuneAI/postgraphile-callback-plugin#readme",
   "devDependencies": {
     "typescript": "^3.1.6"
   },
