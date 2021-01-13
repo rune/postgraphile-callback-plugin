@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RuneAI/postgraphile-callback-plugin#readme",
   "devDependencies": {
+    "prettier": "^2.2.1",
     "typescript": "^3.1.6"
   },
   "dependencies": {
