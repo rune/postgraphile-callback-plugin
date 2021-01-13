@@ -31,14 +31,16 @@ const callbackPlugin: PostGraphilePlugin = {
 
   ["postgraphile:http:handler"](req, context: RequestIncomingContext) {
     const { options, res } = context
-    options.startCallbackFunction(req, res, options)
+    const { startCallbackFunction } = options
+    if (startCallbackFunction) startCallbackFunction(req, res, options)
     return req
   },
 
   ["postgraphile:http:end"](content: RequestEndContent, context: RequestEndContext) {
     const { statusCode, result } = content
     const { req, res, options } = context
-    options.endCallbackFunction(req, res, statusCode, result, options)
+    const { endCallbackFunction } = options
+    if (endCallbackFunction) endCallbackFunction(req, res, statusCode, result, options)
     return content
   },
 }
