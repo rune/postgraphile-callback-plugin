@@ -1,6 +1,6 @@
 {
   "name": "postgraphile-callback-plugin",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "You can pass callback functions to this plugin, which'll then be called when specific postgraphile hooks are triggered. Right now, it only works for postgraphile:http:handler and postgraphile:http:end. The ability to pass such callbacks are useful for logging and many other things.",
   "main": "lib/index.js",
   "scripts": {
