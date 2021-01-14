@@ -4,7 +4,7 @@
   "description": "You can pass callback functions to this plugin, which'll then be called when specific postgraphile hooks are triggered. Right now, it only works for postgraphile:http:handler and postgraphile:http:end. The ability to pass such callbacks are useful for logging and many other things.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "rm -vrf lib && tsc && cp package.json lib/"
+    "build": "rm -vrf lib && tsc"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "postgraphile": "^4.2.0"
   },
   "files": [
+    "package.json",
     "lib"
   ]
 }
